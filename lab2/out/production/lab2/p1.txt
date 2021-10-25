@@ -1,0 +1,15 @@
+mainprogram(){
+    defINT a, b, maximum;
+    defSTRING x;
+    a = -3;
+    input(a);
+    input(b);
+    maximum = 0;
+    if(a > b){
+        maximum = a;
+    }
+    else{
+        maximum = b;
+    }
+    output(maximum);
+}
