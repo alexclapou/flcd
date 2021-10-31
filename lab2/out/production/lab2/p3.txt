@@ -1,0 +1,14 @@
+mainprogram(){
+
+defFLOAT[] array = [1.2, 2, 3.4, 4, 7.5, 6, 7, 814.2, 9, 10];
+
+defFLOAT sum;
+
+sum = 0;
+
+for(defINT i = 0; i < 10; i++)
+    sum = sum + array[i];
+
+output(sum);
+
+}

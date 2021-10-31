@@ -1,6 +1,10 @@
-0 0
-3 1
-a 2
-b 3
-maximum 4
-x 5
+"asdas asdasd" 0
+-3 1
+0 2
+2 3
+[1,2,3,4,5,-6] 4
+a 5
+ax[] 6
+b 7
+maximum 8
+x 9
