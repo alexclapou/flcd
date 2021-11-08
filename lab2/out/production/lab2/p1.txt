@@ -1,7 +1,7 @@
 mainprogram(){
     defINT a, b, maximum;
     defSTRING x = "asdas  asdasd"
-    a = 2-3;
+    a = -3;
     defINT ax[] = [1, 2, 3, 4, 5, -6];
     input(a);
     input(b);
