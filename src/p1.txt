@@ -1,0 +1,16 @@
+mainprogram(){
+    defINT a, b, maximum;
+    defSTRING x = "asdas  asdasd"
+    a = -3;
+    defINT ax[] = [1, 2, 3, 4, 5, -6];
+    input(a);
+    input(b);
+    maximum = 0;
+    if(a != b && a % 2 == 0){
+        maximum = a;
+    }
+    else{
+        maximum = b;
+    }
+    output(maximum);
+}

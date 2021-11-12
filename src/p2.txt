@@ -1,0 +1,20 @@
+mainprogram(){
+defINT a;
+defBOOL prime;
+defSTRING message;
+input(a);
+prime = true;
+if(a < 2)
+prime = false;
+if(a > 2 && a % 2 == 0)
+prime = false;
+for(defINT i = 3; i * i <= a; i = i + 2)
+if(a % i == 0)
+prime = false;
+if(prime == true)
+message = "the number is prime";
+else
+message = "the number is not prime";
+output(message);
+
+}

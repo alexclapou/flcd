@@ -1,0 +1,11 @@
+"the number is not prime" 0
+"the number is prime" 1
+0 2
+2 3
+3 4
+a 5
+false 6
+i 7
+message 8
+prime 9
+true 10
