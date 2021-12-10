@@ -1,0 +1,20 @@
+nonTerminals = S stmtlist stmt simplestmt compstmt assignstmt iostmt declstmt expression binaryoperation unaryoperation type simpletype arraytype whilestmt ifstmt
+terminals = ( ) { } mainprogram identifier constant number ! > < = + - / * % != == >= <= [ ] output input defineINT defineBOOL defineSTRING defineFLOAT if else while
+startingSymbol = S
+P =
+S -> mainprogram ( ) { stmtlist }
+stmtlist -> stmt | stmt stmtlist
+stmt -> simplestmt | compstmt
+simplestmt -> assignstmt | iostmt | declstmt
+assignstmt -> identifier = expression
+expression -> constant | identifier | identifier [ number ] | expression binaryoperation expression | unaryoperation expression
+unaryoperation -> !
+binaryoperation -> > | <  | = | + | - | / | * | % | != | == | <= | >=
+iostmt -> output ( identifier ) | input ( identifier )
+declstmt -> type identifier | type identifier = expression
+type -> simpletype | arraytype
+simpletype -> defineINT | defineBOOL | defineSTRING | defineFLOAT
+arraytype -> simpletype [ ]
+compstmt -> whilestmt | ifstmt
+ifstmt -> if ( expression ) { stmtlist } | if ( expression ) { stmtlist } else { stmtlist }
+whilestmt -> while ( expression ) { stmtlist }
